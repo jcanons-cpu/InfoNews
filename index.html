@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        InfoNews | Información que conecta contigo
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         ENCABEZADO
+    =================================================== -->
+
+    <header class="encabezado">
+
+        <div class="contenedor-header">
+
+            <a
+                href="#inicio"
+                class="logo">
+
+                Info<span>News</span>
+
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#noticias">
+                    Noticias
+                </a>
+
+
+                <!-- CATEGORÍAS -->
+
+                <div class="menu-categorias">
+
+                    <button
+                        type="button"
+                        class="boton-categorias">
+
+                        Categorías
+                        <span>▼</span>
+
+                    </button>
+
+
+                    <div class="submenu-categorias">
+
+                        <button
+                            type="button"
+                            onclick="filtrarCategoria('Tecnología')">
+
+                            💻 Tecnología
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="filtrarCategoria('Economía')">
+
+                            💼 Economía
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="filtrarCategoria('Deportes')">
+
+                            ⚽ Deportes
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="mostrarTodasLasNoticias()">
+
+                            📰 Todas las noticias
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#favoritos">
+                    ❤️ Favoritos
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTENIDO PRINCIPAL
+    =================================================== -->
+
+    <main>
+
+
+        <!-- ==================================================
+             INICIO
+        =================================================== -->
+
+        <section
+            id="inicio"
+            class="hero">
+
+            <div class="hero-contenido">
+
+                <span class="hero-etiqueta">
+                    PORTAL DE NOTICIAS
+                </span>
+
+
+                <h1>
+
+                    INFORMACIÓN QUE
+
+                    <span>
+                        CONECTA CONTIGO
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Mantente informado sobre las noticias,
+                    tendencias y acontecimientos que hacen
+                    parte de nuestro mundo.
+
+                </p>
+
+
+                <a
+                    href="#noticias"
+                    class="boton-principal">
+
+                    EXPLORAR NOTICIAS
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             NOTICIAS
+        =================================================== -->
+
+        <section
+            id="noticias"
+            class="seccion-noticias">
+
+
+            <div class="titulo-seccion">
+
+                <span>
+                    INFORMACIÓN ACTUALIZADA
+                </span>
+
+                <h2>
+                    ÚLTIMAS NOTICIAS
+                </h2>
+
+                <p>
+
+                    Descubre las noticias más recientes
+                    de diferentes categorías.
+
+                </p>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="buscador-noticias">
+
+                <input
+                    type="search"
+                    id="buscador"
+                    placeholder="Buscar noticias..."
+                    aria-label="Buscar noticias">
+
+            </div>
+
+
+            <!-- NOTICIAS DINÁMICAS -->
+
+            <section
+                id="contenedor-noticias"
+                class="grid-noticias">
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             FAVORITOS
+        =================================================== -->
+
+        <section
+            id="favoritos"
+            class="seccion-favoritos">
+
+
+            <h2>
+                ❤️ Mis favoritos
+            </h2>
+
+
+            <p>
+                Aún no tienes noticias favoritas.
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CONTACTO
+        =================================================== -->
+
+        <section
+            id="contacto"
+            class="seccion-contacto">
+
+
+            <div class="contacto-introduccion">
+
+                <span>
+                    ESTAMOS PARA ESCUCHARTE
+                </span>
+
+
+                <h2>
+                    CONTÁCTANOS
+                </h2>
+
+
+                <p>
+
+                    Envíanos tus comentarios,
+                    sugerencias o preguntas.
+
+                </p>
+
+            </div>
+
+
+
+            <form
+                id="formulario-contacto"
+                class="formulario-contacto">
+
+
+                <div class="campo-formulario">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre">
+
+                    <small
+                        id="error-nombre"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+
+
+                <div class="campo-formulario">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com">
+
+                    <small
+                        id="error-correo"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+
+
+                <div class="campo-formulario">
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="3001234567">
+
+                    <small
+                        id="error-telefono"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+
+
+                <div class="campo-formulario">
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje"></textarea>
+
+                    <small
+                        id="error-mensaje"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="boton-enviar">
+
+                    ENVIAR MENSAJE
+
+                </button>
+
+
+                <p
+                    id="mensaje-exito"
+                    class="mensaje-exito">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         PIE DE PÁGINA
+    =================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div>
+
+                <h3>
+                    Info<span>News</span>
+                </h3>
+
+                <p>
+                    Información que conecta contigo.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © 2026 InfoNews
+                </p>
+
+                <p>
+                    Proyecto académico
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

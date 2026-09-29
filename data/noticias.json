@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "titulo": "Nueva tecnología transforma la educación",
+        "categoria": "Tecnología",
+        "descripcion": "Las nuevas herramientas digitales están cambiando la manera en que estudiantes y profesores aprenden.",
+        "contenido": "La tecnología continúa transformando los procesos educativos. Las plataformas digitales, las herramientas de aprendizaje en línea y los recursos interactivos permiten que estudiantes y profesores tengan nuevas alternativas para desarrollar sus actividades académicas. Estas soluciones también facilitan el acceso a contenidos educativos y permiten crear experiencias de aprendizaje más dinámicas. El uso adecuado de la tecnología representa una oportunidad para complementar la educación tradicional y fortalecer las competencias digitales.",
+        "fecha": "28 de septiembre de 2026",
+        "imagen": "img/tecnologia.jpg"
+    },
+
+    {
+        "id": 2,
+        "titulo": "Nuevas oportunidades para los emprendedores",
+        "categoria": "Economía",
+        "descripcion": "Los pequeños y medianos negocios encuentran nuevas herramientas para fortalecer sus proyectos.",
+        "contenido": "El emprendimiento continúa siendo una alternativa importante para el desarrollo económico. Los pequeños y medianos negocios están incorporando herramientas digitales para mejorar sus procesos, llegar a nuevos clientes y fortalecer sus estrategias comerciales. El comercio electrónico, las redes sociales y las plataformas de gestión permiten que los emprendedores tengan nuevas posibilidades para promocionar sus productos y servicios. La capacitación y la planificación siguen siendo elementos importantes para el crecimiento sostenible de estos proyectos.",
+        "fecha": "27 de septiembre de 2026",
+        "imagen": "img/economia.jpg"
+    },
+
+    {
+        "id": 3,
+        "titulo": "El deporte colombiano se prepara para nuevos retos",
+        "categoria": "Deportes",
+        "descripcion": "Los deportistas colombianos continúan su preparación para las próximas competencias.",
+        "contenido": "Los deportistas colombianos continúan trabajando en su preparación para afrontar nuevos desafíos nacionales e internacionales. Los procesos de entrenamiento combinan preparación física, disciplina y planificación para alcanzar los objetivos establecidos por cada deportista y equipo. El deporte también representa una oportunidad para promover hábitos saludables y fortalecer valores como la responsabilidad, el trabajo en equipo y la perseverancia.",
+        "fecha": "26 de septiembre de 2026",
+        "imagen": "img/deportes.jpg"
+    }
+]
